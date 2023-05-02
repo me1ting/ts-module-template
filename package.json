@@ -1,0 +1,36 @@
+{
+  "name": "ts-module-template",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "lint": "eslint --ext .ts .",
+    "format": "prettier --write .",
+    "test": "jest",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test"
+  },
+  "packageManager": "yarn@3.5.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/me1ting/ts-module-template.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "prettier": "2.8.8",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.21.2",
+    "ts-jest": "^29.1.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
