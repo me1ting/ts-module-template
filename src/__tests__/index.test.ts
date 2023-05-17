@@ -1,4 +1,4 @@
-import { helloworld } from "../index";
+import { helloworld } from "../index.js";
 
 test("helloworld works right", () => {
     expect(helloworld()).toBe("hello world");

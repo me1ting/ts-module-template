@@ -7,11 +7,10 @@
     "build": "rimraf dist && rollup -c rollup.config.js",
     "lint": "eslint --ext .ts .",
     "format": "prettier --write .",
-    "test": "jest",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn test"
+    "test": "vitest run --globals",
+    "prepare": "pnpm build",
+    "prepublishOnly": "pnpm test"
   },
-  "packageManager": "yarn@3.5.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -22,13 +21,12 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.0",
     "@types/jest": "^29.5.1",
-    "jest": "^29.5.0",
     "prettier": "2.8.8",
     "rimraf": "^5.0.0",
     "rollup": "^3.21.2",
-    "ts-jest": "^29.1.0",
     "tslib": "^2.5.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
   },
   "files": [
     "dist/**/*"
