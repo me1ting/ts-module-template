@@ -1,5 +1,7 @@
 # ts-module-template
-使用TypeScirpt编写module的基本模板。
+
+使用 TypeScirpt 编写 module 的基本模板。
 
 # eslint
-就个人的少量的项目体验而言，eslint的作用不太大，但保留未来添加eslint的可能性。
+
+就个人的少量的项目体验而言，eslint 在 TypeScript 中的作用不太大。
