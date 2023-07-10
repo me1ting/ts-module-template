@@ -1,4 +1,2 @@
 dist
-.yarn
-.pnp.*
 pnpm-lock.yaml
