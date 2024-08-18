@@ -1,6 +1,11 @@
 # ts-module-template
 
-使用 TypeScirpt 编写 module 的基本模板。
+使用 TypeScirpt 编写 module 的基本模板。包括：
+
+- 使用 typescript
+- 使用 vitest 测试
+- 使用 rollup 编译
+- 使用 prettier 格式化代码
 
 # eslint
 
